@@ -4,16 +4,19 @@ const Expert = ({ expert }) => {
     const { name, imag } = expert;
 
     return (
-        <div class="col-md-6 col-lg-4">
-            <div style={{ width: "18rem" }}>
-                <img src={imag} class="card-img-top" alt="" />
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">{name}</small></p>
+        <div className='g-5 col-12 col-md-6 col-lg-4'>
+            <div className="card" style={{ width: "18rem" }}>
+                <img src={imag} className="card-img-top" alt="..." />
+                <div className="card-body">
+                    <h5 className="card-title">{name}</h5>
+                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" className="btn btn-primary">Go somewhere</a>
                 </div>
             </div>
         </div>
-    )
+
+        // <div className='col-md-3'><img src={imag} alt="" /></div>
+
+    );
 };
 export default Expert;
