@@ -10,7 +10,7 @@ import logo from '../../../images/logo.png';
 const Header = () => {
   const [user] = useAuthState(auth);
   const hadleSignOut = () => {
-    signOut(auth);
+  signOut(auth);
   }
   return (
     <>
