@@ -10,14 +10,13 @@ import logo from '../../../images/logo.png';
 const Header = () => {
   const [user] = useAuthState(auth);
   const hadleSignOut = () => {
-  signOut(auth);
+    signOut(auth);
   }
   return (
     <>
       <Navbar sticky='top' collapseOnSelect expand="lg" bg="primary" variant="dark">
 
         <Container>
-
           <Navbar.Brand as={Link} to="/">
             <img height={30} src={logo} alt="" />
           </Navbar.Brand>
